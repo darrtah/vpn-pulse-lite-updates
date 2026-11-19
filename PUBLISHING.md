@@ -112,3 +112,28 @@ After a successful phone test:
 **No new GitHub PAT is needed.** Do not use the removed automatic publication workflow.
 The public CI validates the metadata, digest and pinned APK signing certificate. CI does not validate Android upgrade behavior on a phone.
 Stable Lite is separate and must not reuse this Beta debug key.
+
+
+## Optional automatic Beta upload from private Windows Runner
+
+The private `darrtah/vpn-pulse-lite` repository contains an experimental, opt-in
+GitHub Actions publisher on branch `ci/beta-autopublish-gated-20261119`.
+**This publisher is disabled by default. No signed Beta APK or `latest.json` is live yet.**
+
+Before enabling it, verify the installed Android Beta's signing certificate against
+the release candidate. Protect and back up the Runner debug.keystore outside Git.
+Then add the **verified** certificate SHA-256 to `beta/signing-cert-sha256.txt`.
+
+In the *private* source repository configure:
+- Actions variable `PULSE_INSTALLED_BETA_SHA256`: the same verified certificate fingerprint.
+- Actions secret `PUBLIC_RELEASE_TOKEN`: fine-grained PAT with Contents Read/Write on **only** this public repository.
+- Actions variable `PULSE_BETA_AUTO_PUBLISH=true`: turn this on **last**, after real Android update testing.
+
+Private CI builds the APK, checks its non-debuggable package/version/signature and
+runs the regression tests. The publisher rechecks the trusted certificate **before**
+accepting publishing credentials. It uploads an immutable versioned APK, verifies
+public Pages download and SHA-256, and updates `beta/latest.json` **only afterward**.
+
+Without the approval variable, public signing pin or token, no automatic Beta release
+should be published. Do not put APK signing keys or GitHub tokens in this public repo.
+**Stable** is not part of this Beta workflow.
