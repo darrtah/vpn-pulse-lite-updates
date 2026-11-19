@@ -137,3 +137,22 @@ public Pages download and SHA-256, and updates `beta/latest.json` **only afterwa
 Without the approval variable, public signing pin or token, no automatic Beta release
 should be published. Do not put APK signing keys or GitHub tokens in this public repo.
 **Stable** is not part of this Beta workflow.
+
+
+## Optional CI-driven Beta publication (2026-11-19)
+
+The private source branch `ci/beta-signed-release-20261119` includes a gated publisher modeled on Network Monitor's working pipeline.
+
+- Private Windows Runner prepares a non-debuggable Beta APK, verifies its Android signature and SHA-256, and keeps a private artifact.
+- `PUBLIC_RELEASE_TOKEN` is an **optional** private source repository Actions secret scoped with `Contents: Read and write` to **this public repository only**.
+- `beta/signing-cert-sha256.txt` must contain a **phone-verified** certificate SHA-256 fingerprint before the publisher can run.
+- If either the token or the verified pin is absent, public publication is skipped and the private build artifact remains available.
+- When enabled, the private workflow pushes the versioned APK, verifies the actual GitHub Pages download and hash, then pushes `beta/latest.json` last.
+- The publisher refuses APK overwrite, feed downgrade, wrong package, mismatched certificate, invalid APK signature, and debug builds.
+- No keystore, password, PAT, source files, or private logs belong in this public repo.
+
+**Current status:** no approved Beta signing certificate or public Beta APK has been uploaded. Never treat the Runner's certificate alone as proof that it matches an installed phone.
+
+To stop future automatic publication, remove the `PUBLIC_RELEASE_TOKEN` secret from the private source repository. Existing public files remain until explicitly changed.
+
+Stable does not use this Beta debug-signing route.
