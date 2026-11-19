@@ -1,0 +1,21 @@
+name: Verify public update releases
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate release metadata, URLs and SHA-256
+        run: python3 tools/validate_release.py
+      - name: Validate APK signatures against pinned certificates
+        run: bash tools/verify_signatures.sh
