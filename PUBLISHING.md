@@ -85,3 +85,30 @@ APK и feed должны быть на одном HTTPS origin. Приложен
 Понижение `versionCode` штатной установкой Android не допускается. При исправлении выпустите новый APK с **большим** `versionCode`.
 
 Источник исходников: приватный проект VPN Pulse Lite. В этот репозиторий не переносите исходный код или рабочие секреты.
+
+
+## Beta: manual publication without GitHub PAT (2026-11-19)
+
+The private source repository now has a token-free candidate workflow:
+`Build private Beta candidate with existing signing key` in branch `ci/beta-signed-release-20261119`.
+
+The Windows Runner signs the **non-debuggable Beta APK** with its existing Android debug key.
+This is **only for limited Beta testing**; it is not suitable for Stable or broad public distribution.
+The private CI artifact contains the APK, `latest.json`, and `candidate-signing-cert-sha256.txt`.
+It contains no private signing key.
+
+**Before uploading anything**, compare the candidate signing certificate against the APK already installed on the test phone.
+A candidate with a different certificate cannot update the installed Beta and must not be offered as an upgrade.
+Protect and back up the existing `debug.keystore` outside GitHub; do not generate a replacement silently.
+
+After a successful phone test:
+
+1. Create `beta/signing-cert-sha256.txt` with the 64-digit certificate fingerprint verified against the installed Beta.
+2. Upload the versioned APK to `beta/` through the GitHub web interface.
+3. Wait for the public Pages APK and verify its SHA-256.
+4. Upload `beta/latest.json` **last** and verify the public feed.
+5. Check an in-app upgrade on a second test installation.
+
+**No new GitHub PAT is needed.** Do not use the removed automatic publication workflow.
+The public CI validates the metadata, digest and pinned APK signing certificate. CI does not validate Android upgrade behavior on a phone.
+Stable Lite is separate and must not reuse this Beta debug key.
