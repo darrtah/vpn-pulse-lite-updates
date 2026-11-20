@@ -1,10 +1,10 @@
 {
     "schema":  1,
     "packageName":  "ru.vpnpulse.lite.beta",
-    "versionCode":  21,
-    "versionName":  "1.1.0-beta20",
-    "apkUrl":  "https://darrtah.github.io/vpn-pulse-lite-updates/beta/vpn-pulse-lite-21.apk",
-    "sha256":  "3906ba78a09abd688caf51476bc2a187ee2bd1782d18edde83a1d16b7a11da50",
-    "sizeBytes":  63704,
-    "notes":  "Beta20: one APK, default SOCKS5 with verified loopback handshake and HTTP fallback."
+    "versionCode":  22,
+    "versionName":  "1.1.0-beta21",
+    "apkUrl":  "https://darrtah.github.io/vpn-pulse-lite-updates/beta/vpn-pulse-lite-22.apk",
+    "sha256":  "7a784d7aea8f2b36ba3758be0649096a3a2ff54a76a09a4715db746a65bb67a1",
+    "sizeBytes":  67164,
+    "notes":  "Beta21: verified automatic Wi-Fi APK download, Android-confirmed installation."
 }
