@@ -1,10 +1,10 @@
 {
     "schema":  1,
     "packageName":  "ru.vpnpulse.lite.beta",
-    "versionCode":  14,
-    "versionName":  "1.1.0-beta13",
-    "apkUrl":  "https://darrtah.github.io/vpn-pulse-lite-updates/beta/vpn-pulse-lite-14.apk",
-    "sha256":  "469872d8841e5d6f390a590bf74a684a43be0d1eb9e84cf9755ba77f9d19565a",
-    "sizeBytes":  58504,
-    "notes":  "Beta13: real-time brightness preview, no network probe on redraw."
+    "versionCode":  15,
+    "versionName":  "1.1.0-beta14",
+    "apkUrl":  "https://darrtah.github.io/vpn-pulse-lite-updates/beta/vpn-pulse-lite-15.apk",
+    "sha256":  "12408d051c0c98c4a3f650d33c94d64298640b0abd8ddd6ebf3410a55c9fd2a4",
+    "sizeBytes":  58968,
+    "notes":  "Beta14: red ring for failed VPN HTTPS probes; independent blue and limited direct access."
 }
