@@ -1,0 +1,10 @@
+{
+    "schema":  1,
+    "packageName":  "ru.vpnpulse.lite.beta",
+    "versionCode":  8,
+    "versionName":  "1.1.0-beta7",
+    "apkUrl":  "https://darrtah.github.io/vpn-pulse-lite-updates/beta/vpn-pulse-lite-8.apk",
+    "sha256":  "9d972eec5eeb366bf0a5315e09dbeb63fec2f042cd7d39a601196101790db2c8",
+    "sizeBytes":  51416,
+    "notes":  "VPN Pulse Lite Beta update."
+}
