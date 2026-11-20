@@ -1,10 +1,10 @@
 {
     "schema":  1,
     "packageName":  "ru.vpnpulse.lite.beta",
-    "versionCode":  17,
-    "versionName":  "1.1.0-beta16",
-    "apkUrl":  "https://darrtah.github.io/vpn-pulse-lite-updates/beta/vpn-pulse-lite-17.apk",
-    "sha256":  "23b9f60d7b8829eda90715a3e04f3055bf4e13e1e45b81f634474ea43e0040be",
-    "sizeBytes":  59900,
-    "notes":  "Beta16: default proxy-aware HTTPS checks, per-site failure cause and post-update receiver trace."
+    "versionCode":  18,
+    "versionName":  "1.1.0-beta17",
+    "apkUrl":  "https://darrtah.github.io/vpn-pulse-lite-updates/beta/vpn-pulse-lite-18.apk",
+    "sha256":  "8f1546658b09878f342438531a174a8bb4d45b9a93c194870bf09eb7cc89f6a3",
+    "sizeBytes":  60848,
+    "notes":  "Beta17: independent parallel HTTPS jobs, truthful budget timeouts and bounded workers."
 }
