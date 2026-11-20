@@ -1,10 +1,10 @@
 {
     "schema":  1,
     "packageName":  "ru.vpnpulse.lite.beta",
-    "versionCode":  12,
-    "versionName":  "1.1.0-beta11",
-    "apkUrl":  "https://darrtah.github.io/vpn-pulse-lite-updates/beta/vpn-pulse-lite-12.apk",
-    "sha256":  "29e946e6e4a066465bb61dec3244e2d55b5c718f2b4358e749988d16176f3d25",
-    "sizeBytes":  56200,
-    "notes":  "Beta11: readable status bar, persistent toggles, auto-restore and brighter green dot."
+    "versionCode":  13,
+    "versionName":  "1.1.0-beta12",
+    "apkUrl":  "https://darrtah.github.io/vpn-pulse-lite-updates/beta/vpn-pulse-lite-13.apk",
+    "sha256":  "09032833fed84a18a40ec97e99942a754c1c02744b4647ec2ce6c178ded4fae2",
+    "sizeBytes":  57904,
+    "notes":  "Beta12: guard Activity startup and record non-sensitive crash source."
 }
