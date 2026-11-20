@@ -1,10 +1,10 @@
 {
     "schema":  1,
     "packageName":  "ru.vpnpulse.lite.beta",
-    "versionCode":  23,
-    "versionName":  "1.1.0-beta22",
-    "apkUrl":  "https://darrtah.github.io/vpn-pulse-lite-updates/beta/vpn-pulse-lite-23.apk",
-    "sha256":  "e7a9f114370f1a217fdea971919eab694bba7a352fe021e868ac4bcd17621cf3",
+    "versionCode":  24,
+    "versionName":  "1.1.0-beta23",
+    "apkUrl":  "https://darrtah.github.io/vpn-pulse-lite-updates/beta/vpn-pulse-lite-24.apk",
+    "sha256":  "d1f433c8a247c6963f95972ef47cc1e6da7170bede995fd8d564a4ee5153ba6d",
     "sizeBytes":  68044,
-    "notes":  "Beta22: distinct notification channels, one alert per verified release."
+    "notes":  "Beta23: test automatic notification, verified Wi-Fi download and update from Beta22."
 }
