@@ -1,10 +1,10 @@
 {
     "schema":  1,
     "packageName":  "ru.vpnpulse.lite.beta",
-    "versionCode":  19,
-    "versionName":  "1.1.0-beta18",
-    "apkUrl":  "https://darrtah.github.io/vpn-pulse-lite-updates/beta/vpn-pulse-lite-19.apk",
-    "sha256":  "938e4b4e7423a095b6209706aba36b32ee51b27747d175b27d2384097c163640",
-    "sizeBytes":  63240,
-    "notes":  "Beta18: signed two-UID route helper, protected status IPC, independent direct and VPN probes."
+    "versionCode":  20,
+    "versionName":  "1.1.0-beta19",
+    "apkUrl":  "https://darrtah.github.io/vpn-pulse-lite-updates/beta/vpn-pulse-lite-20.apk",
+    "sha256":  "2374a1d8683486b65620f731e9d6b30b0e6b9ceac5651bccba7f3f1b958b4c8f",
+    "sizeBytes":  62712,
+    "notes":  "Beta19: single APK direct HTTPS + localhost Happ HTTP proxy for VPN probes."
 }
