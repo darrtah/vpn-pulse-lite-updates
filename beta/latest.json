@@ -1,10 +1,10 @@
 {
     "schema":  1,
     "packageName":  "ru.vpnpulse.lite.beta",
-    "versionCode":  9,
-    "versionName":  "1.1.0-beta8",
-    "apkUrl":  "https://darrtah.github.io/vpn-pulse-lite-updates/beta/vpn-pulse-lite-9.apk",
-    "sha256":  "a0fefb140a68bb8269fb63997f8d1bd6ecc4dbe1df6c2efa226558f6177ca152",
-    "sizeBytes":  51420,
-    "notes":  "Beta8: in-app update test from Beta7; no feature changes."
+    "versionCode":  10,
+    "versionName":  "1.1.0-beta9",
+    "apkUrl":  "https://darrtah.github.io/vpn-pulse-lite-updates/beta/vpn-pulse-lite-10.apk",
+    "sha256":  "cb0a7ad3441fc9cd45db2f31aefd8128baa25006deba455e84417931dbc2f242",
+    "sizeBytes":  52700,
+    "notes":  "Beta9: persist settings and resume monitoring after Android app update."
 }
