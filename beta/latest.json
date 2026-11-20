@@ -1,10 +1,10 @@
 {
     "schema":  1,
     "packageName":  "ru.vpnpulse.lite.beta",
-    "versionCode":  18,
-    "versionName":  "1.1.0-beta17",
-    "apkUrl":  "https://darrtah.github.io/vpn-pulse-lite-updates/beta/vpn-pulse-lite-18.apk",
-    "sha256":  "8f1546658b09878f342438531a174a8bb4d45b9a93c194870bf09eb7cc89f6a3",
-    "sizeBytes":  60848,
-    "notes":  "Beta17: independent parallel HTTPS jobs, truthful budget timeouts and bounded workers."
+    "versionCode":  19,
+    "versionName":  "1.1.0-beta18",
+    "apkUrl":  "https://darrtah.github.io/vpn-pulse-lite-updates/beta/vpn-pulse-lite-19.apk",
+    "sha256":  "938e4b4e7423a095b6209706aba36b32ee51b27747d175b27d2384097c163640",
+    "sizeBytes":  63240,
+    "notes":  "Beta18: signed two-UID route helper, protected status IPC, independent direct and VPN probes."
 }
