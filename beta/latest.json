@@ -1,10 +1,10 @@
 {
     "schema":  1,
     "packageName":  "ru.vpnpulse.lite.beta",
-    "versionCode":  10,
-    "versionName":  "1.1.0-beta9",
-    "apkUrl":  "https://darrtah.github.io/vpn-pulse-lite-updates/beta/vpn-pulse-lite-10.apk",
-    "sha256":  "cb0a7ad3441fc9cd45db2f31aefd8128baa25006deba455e84417931dbc2f242",
-    "sizeBytes":  52700,
-    "notes":  "Beta9: persist settings and resume monitoring after Android app update."
+    "versionCode":  11,
+    "versionName":  "1.1.0-beta10",
+    "apkUrl":  "https://darrtah.github.io/vpn-pulse-lite-updates/beta/vpn-pulse-lite-11.apk",
+    "sha256":  "3c528a7eccc1e7a6bd3275e231683ea90c1b5681143ed5e69e15b9eb148d470d",
+    "sizeBytes":  54708,
+    "notes":  "Beta10: report WindowManager overlay attempts and retry on device."
 }
