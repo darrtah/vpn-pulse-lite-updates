@@ -1,10 +1,10 @@
 {
     "schema":  1,
     "packageName":  "ru.vpnpulse.lite.beta",
-    "versionCode":  24,
-    "versionName":  "1.1.0-beta23",
-    "apkUrl":  "https://darrtah.github.io/vpn-pulse-lite-updates/beta/vpn-pulse-lite-24.apk",
-    "sha256":  "d1f433c8a247c6963f95972ef47cc1e6da7170bede995fd8d564a4ee5153ba6d",
-    "sizeBytes":  68044,
-    "notes":  "Beta23: test automatic notification, verified Wi-Fi download and update from Beta22."
+    "versionCode":  25,
+    "versionName":  "1.1.0-beta24",
+    "apkUrl":  "https://darrtah.github.io/vpn-pulse-lite-updates/beta/vpn-pulse-lite-25.apk",
+    "sha256":  "f0eb781902d716c13087f4f1dea223b53478282f6ac2cdbdbeeca836341bb567",
+    "sizeBytes":  72056,
+    "notes":  "Beta24: optional headset battery percentage below the VPN dot, with permission gating."
 }
